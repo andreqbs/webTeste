@@ -6,7 +6,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Novo projeto de pesquisa</title>
+        <title>+P | Novo Projeto</title>
 
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -14,8 +14,17 @@
         <link href="css/animate.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
 
-    </head>
+        <style>
+            #feedback { font-size: 1.4em; }
+            #selectable .ui-selecting { background: #FECA40; }
+            #selectable .ui-selected { background: #F39814; color: white; }
+            #selectable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+            #selectable li { margin: 3px; padding: 0.4em; font-size: 1.4em; height: 18px; }
+            td { cursor: default; }
+            .highlight { background: #1ab394; }
+        </style>
 
+    </head>
     <body>
 
         <div id="wrapper">
@@ -325,10 +334,10 @@
                                 <a href="index.html">Home</a>
                             </li>
                             <li>
-                                <a>Submissão</a>
+                                <a>Formulário</a>
                             </li>
                             <li class="active">
-                                <strong>Projeto</strong>
+                                <strong>Pesquisa</strong>
                             </li>
                         </ol>
                     </div>
@@ -496,25 +505,25 @@
                                                 <div class="checkbox i-checks"><label> <input type="radio" checked="" value="option2" name="a"> <i></i> Cooperação Técnico-Científica </label></div>
                                             </div>
                                         </div>
-                                        <div class="hr-line-dashed"></div>
+
 
                                         <div class="form-group"> <label class="col-sm-2 control-label">Pontuar da participação</label>
                                             <div class="col-sm-10"><textarea class="form-control" rows="5" id="comment"></textarea></div>
                                         </div>      
 
-
+                                        <div class="hr-line-dashed"></div>
                                         <div class="form-group"><label class="col-sm-2 control-label">Infraestrutura da UnP</label>
-                                            <div class="col-sm-10"><textarea class="form-control" rows="5" id="comment"></textarea></div>
+                                            <div class="col-sm-10"><textarea class="form-control" rows="5" id="comment" placeholder="Informar especificamente se utilizará laboratório(s) ou outra estrutura e qual(is)"></textarea></div>
                                         </div>
 
                                         <div class="hr-line-dashed"></div>
 
-                                        <div class="form-group"> <label class="col-sm-2 control-label">Atividades ao Ensino</label>
+                                        <div class="form-group"> <label class="col-sm-2 control-label">Atividades integradas ao Ensino</label>
                                             <div class="col-sm-10"><textarea class="form-control" rows="5" id="comment"></textarea></div>
                                         </div>      
 
 
-                                        <div class="form-group"><label class="col-sm-2 control-label">Atividades a Extensão</label>
+                                        <div class="form-group"><label class="col-sm-2 control-label">Atividades integradas a Extensão</label>
                                             <div class="col-sm-10"><textarea class="form-control" rows="5" id="comment"></textarea></div>
                                         </div>
                                     </form>
@@ -544,21 +553,33 @@
                                 </div>
                                 <div class="ibox-content">
                                     <form method="get" class="form-horizontal">
-                                        <div class="form-group"><label class="col-sm-2 control-label">Título da Pesquisa</label>
-                                            <div class="col-sm-10"><input type="text" class="form-control"></div>
-                                        </div>
+                                        <div class="form-group"> <label class="col-sm-2 control-label">Introdução</label>
+                                            <div class="col-sm-10"><textarea class="form-control" rows="3" id="comment" placeholder="Problemática e Justificativa da Pesquisa"></textarea></div>
+                                        </div>  
 
-                                        <div class="form-group"><label class="col-sm-2 control-label">Fundamentação Teórica</label>
-                                            <div class="col-sm-10"><input type="text" class="form-control"></div>
-                                        </div>
 
-                                        <div class="form-group"><label class="col-sm-2 control-label">Objetivos</label>
-                                            <div class="col-sm-10"><input type="text" class="form-control"></div>
+                                        <div class="form-group"> <label class="col-sm-2 control-label">Fundamentação Teórica</label>
+                                            <div class="col-sm-10"><textarea class="form-control" rows="3" id="comment" placeholder="Antecedentes científicos / Revisão de Literatura"></textarea></div>
+                                        </div>    
+
+                                        <div class="form-group"> <label class="col-sm-2 control-label">Objetivos Gerais</label>
+                                            <div class="col-sm-10"><textarea class="form-control" rows="3" id="comment"></textarea></div>
+                                        </div>      
+
+
+                                        <div class="form-group"><label class="col-sm-2 control-label">Objetivos Específicos</label>
+                                            <div class="col-sm-10"><textarea class="form-control" rows="3" id="comment"></textarea></div>
                                         </div>
 
                                         <div class="form-group"><label class="col-sm-2 control-label">Metodologia</label>
-                                            <div class="col-sm-10"><input type="text" class="form-control"></div>
+                                            <div class="col-sm-10"><textarea class="form-control" rows="3" id="comment"></textarea></div>
                                         </div>
+
+                                        <div class="form-group"><label class="col-sm-2 control-label">Análise crítica de Riscos e Benefícios</label>
+                                            <div class="col-sm-10"><textarea class="form-control" rows="3" id="comment" placeholder="Item específico para pesquisas que envolvem seres humanos e animais - Descrever qualquer Risco, seja físico ou moral, avaliando sua possibilidade, gravidade e as medidas para proteção ou minimização do mesmo. Da mesma forma evidenciar os Benefícios da pesquisa."></textarea></div>
+                                        </div>
+
+
 
 
                                     </form>
@@ -644,15 +665,15 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>1</td>
-                                                <td>Mark</td>
-                                                <td>Otto</td>
-                                                <td>@mdo</td>
-                                                <td>@mdo</td>
-                                                <td>@mdo</td>
+                                                <td>Material de Consumo</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
                                             </tr>
                                             <tr>
-                                                <td>2</td>
+                                                <td>Equipamentos</td>
                                                 <td>Jacob</td>
                                                 <td>Thornton</td>
                                                 <td>@fat</td>
@@ -661,7 +682,7 @@
 
                                             </tr>
                                             <tr>
-                                                <td>3</td>
+                                                <td>Passagens</td>
                                                 <td>Larry</td>
                                                 <td>the Bird</td>
                                                 <td>@twitter</td>
@@ -670,7 +691,7 @@
 
                                             </tr>
                                             <tr>
-                                                <td>4</td>
+                                                <td>Hospedagem</td>
                                                 <td>Larry</td>
                                                 <td>the Bird</td>
                                                 <td>@twitter</td>
@@ -679,7 +700,7 @@
 
                                             </tr>
                                             <tr>
-                                                <td>5</td>
+                                                <td>Alimentação</td>
                                                 <td>Larry</td>
                                                 <td>the Bird</td>
                                                 <td>@twitter</td>
@@ -687,7 +708,7 @@
                                                 <td>@mdo</td>
                                             </tr>
                                             <tr>
-                                                <td>6</td>
+                                                <td>Outros</td>
                                                 <td>Larry</td>
                                                 <td>the Bird</td>
                                                 <td>@twitter</td>
@@ -809,39 +830,65 @@
                                     </div>
                                 </div>
                                 <div class="ibox-content">
-                                    <div class="container">
+
+
+                                    <div class="container-fluid" >
                                         <div class="row">
                                             <div class="row">
                                                 <div class="span">
                                                     <table class="table table-bordered">
                                                         <thead>
                                                             <tr>
-                                                                <th></th>
-                                                                <th colspan="3">Col1</th>
+
+                                                                <th rowspan="2" class="text-center">ITENS</th>
+                                                                <th colspan="12" class="text-center">CRONOGRAMA DE DESEMBOLSO</th>
                                                             </tr>
                                                             <tr>
-                                                                <th></th>
-                                                                <th>Sub1</th>
-                                                                <th>Sub2</th>
-                                                                <th>Sub3</th>
+
+                                                                <th class="text-center">Fev</th>
+                                                                <th class="text-center">Mar</th>
+                                                                <th class="text-center">Abr</th>
+                                                                <th class="text-center">Mai</th>
+                                                                <th class="text-center">Jun</th>
+                                                                <th class="text-center">Jul</th>
+                                                                <th class="text-center">Ago</th>
+                                                                <th class="text-center">Set</th>
+                                                                <th class="text-center">Out</th>
+                                                                <th class="text-center">Nov</th>
+                                                                <th class="text-center">Dez</th>
                                                             </tr>    
                                                         </thead>
                                                         <tbody>
+
                                                             <tr>
-                                                                <th rowspan="3">Row1</th>
-                                                                <td>[-01234543333545]</td>
-                                                                <td>[4567]</td>
-                                                                <td>[1]</td>
+                                                                <td></td>
+                                                                <td></td>
+
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+
                                                             </tr>
                                                             <tr>
-                                                                <td>[1]</td>
-                                                                <td>[456.789]</td>
-                                                                <td>[2]</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>[0]</td>
-                                                                <td>[1]</td>
-                                                                <td>[0000789.0123]</td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
@@ -849,45 +896,107 @@
                                             </div>
                                         </div>
                                     </div>
+
+
                                 </div>
                             </div>
                         </div>
                     </div>
-
-
-                    <div class="footer">
-                        <div class="pull-right">
-                            10GB of <strong>250GB</strong> Free.
-                        </div>
-                        <div>
-                            <strong>Copyright</strong> Example Company &copy; 2014-2015
-                        </div>
-                    </div>
-
                 </div>
+
+                <div class="footer">
+                    <div class="pull-right">
+                        <strong>andreqbs@gmail.com</strong>
+                    </div>
+                    <div>
+                        <strong>Copyright</strong> &copy; 2016
+                    </div>
+                </div>
+
             </div>
+        </div>
 
 
-            <!-- Mainly scripts -->
-            <script src="js/jquery-2.1.1.js"></script>
-            <script src="js/bootstrap.min.js"></script>
-            <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
-            <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+        <!-- Mainly scripts -->
+        <script src="js/jquery-2.1.1.js"></script>
 
-            <!-- Custom and plugin javascript -->
-            <script src="js/inspinia.js"></script>
-            <script src="js/plugins/pace/pace.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
 
-            <!-- iCheck -->
-            <script src="js/plugins/iCheck/icheck.min.js"></script>
-            <script>
-                $(document).ready(function () {
-                    $('.i-checks').iCheck({
-                        checkboxClass: 'icheckbox_square-green',
-                        radioClass: 'iradio_square-green',
-                    });
+        <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+        <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+        <script src="http://code.jquery.com/jquery.min.js"></script>
+        <script  src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+        <script src="http://www.pureexample.com/js/lib/jquery.ui.touch-punch.min.js"></script>
+
+        <!-- Custom and plugin javascript -->
+        <script src="js/inspinia.js"></script>
+        <script src="js/plugins/pace/pace.min.js"></script>
+
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+        <!-- iCheck -->
+        <script src="js/plugins/iCheck/icheck.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('.i-checks').iCheck({
+                    checkboxClass: 'icheckbox_square-green',
+                    radioClass: 'iradio_square-green',
                 });
-            </script>
+            });
+        </script>
+
+
+
+        <script>
+            $(function () {
+                $('#item').selectable();
+            });
+        </script>
+
+        <script>
+            $(function () {
+
+                /* Get all rows from your 'table' but not the first one 
+                 * that includes headers. */
+                var rows = $('td').not(':first');
+
+                /* Create 'click' event handler for rows */
+                rows.on('click', function (e) {
+
+                    /* Get current row */
+                    var row = $(this);
+
+                    /* Check if 'Ctrl', 'cmd' or 'Shift' keyboard key was pressed
+                     * 'Ctrl' => is represented by 'e.ctrlKey' or 'e.metaKey'
+                     * 'Shift' => is represented by 'e.shiftKey' */
+                    if ((e.ctrlKey || e.metaKey) || e.shiftKey) {
+                        /* If pressed highlight the other row that was clicked */
+                        row.addClass('highlight');
+                    } else {
+                        /* Otherwise just highlight one row and clean others */
+                        rows.removeClass('highlight');
+                        row.addClass('highlight');
+                    }
+
+                });
+
+                /* This 'event' is used just to avoid that the table text 
+                 * gets selected (just for styling). 
+                 * For example, when pressing 'Shift' keyboard key and clicking 
+                 * (without this 'event') the text of the 'table' will be selected.
+                 * You can remove it if you want, I just tested this in 
+                 * Chrome v30.0.1599.69 */
+                $(document).bind('selectstart dragstart', function (e) {
+                    e.preventDefault();
+                    return false;
+                });
+
+            });
+
+        </script>
+
     </body>
 
 </html>
