@@ -82,30 +82,59 @@
                             </div>
                         </li>
                         <li class="active">
-                            <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Principal</span></a>
+                            <a href="index_unp.html"><i class="fa fa-th-large"></i> <span class="nav-label">Principal</span></a>
 
                         </li>
+                        
                         <li>
-                            <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">Formulário</span><span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-sitemap"></i> <span class="nav-label">Pesquisa </span><span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
-                                <li><a href="form_basic_unp.html">Pesquisa</a></li>
-                                <li><a href="#">Projeto</a></li>
+                                <li>
+                                    <a href="#">Formulários <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                           <a href="form_basic_unp.html">Nova Pesquisa</a>
+                                        </li>
+                                
+                                        <li>
+                                            <a href="#">Relatório Parcial</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Relatório Final</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li><a href="graph_flot.html">Acompanhar Pesquisas</a></li>
                             </ul>
                         </li>
+
                         <li>
-                            <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Relatórios</span><span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-sitemap"></i> <span class="nav-label">Extensão </span><span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
-                                <li><a href="#">Enviar</a></li>
-                                <li><a href="graph_flot.html">Visualizar</a></li>
+                                <li>
+                                    <a href="#">Formulários <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="#">Novo Projeto</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Relatório Parcial</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Relatório Final</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li><a href="#">Acompanhar Projetos</a></li>
                             </ul>
                         </li>
+                 
+                        
                         <li>
-                            <a href="mailbox.html"><i class="fa fa-envelope"></i> <span class="nav-label">Email </span><span class="label label-warning pull-right">16/24</span></a>
-                            <ul class="nav nav-second-level">
-                                <li><a href="mailbox.html">Caixa de Entrada</a></li>
-                                <li><a href="#">Visualizar email</a></li>
-                                <li><a href="#">Escrever email</a></li>
-                            </ul>
+                            <a href="graph_flot.html"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Relatórios</span></a>
+                          
                         </li>
 
                         <li>
@@ -320,7 +349,7 @@
                                         </div>
                                         <div class="hr-line-dashed"></div>
                                         <div class="row">
-                                            <label class="col-sm-2 control-label">Coordenador</label>
+                                            <label class="col-sm-2 control-label">Professor Coordenador</label>
 
                                             <div class="col-md-3"><input id="title" type="text" class="form-control" placeholder="Responsável pelo projeto" />
                                             </div>
@@ -386,6 +415,49 @@
 
                                             <div class="col-md-6"><input id="latesCol" type="text" class="form-control" placeholder="http://lattes.cnpq.br/94449232326572913" />
                                             </div>
+                                        </div>
+
+
+
+                                        <div class="hr-line-dashed"></div>
+
+                                        <div class="row">
+                                            <label class="col-sm-2 control-label">Aluno</label>
+                                            <div class="col-md-3"><input id="title" type="text" class="form-control" placeholder="Responsável pelo projeto" />
+                                            </div>
+
+                                            <label class="col-sm-1 control-label">Vínculo</label>
+                                            <div class="col-md-2">
+                                                <select class="form-control m-b input-sm" name="account">
+                                                    <option>Selecione...</option>
+                                                    <option>Graduação</option>
+                                                    <option>Mestrado</option>
+                                                    <option>Doutorado</option>
+                                                </select>
+                                            </div>                                           
+
+                                            <label class="col-sm-1 control-label">Email</label>
+                                            <div class="col-md-3"><input id="emailCod" type="email" required="" class="form-control" placeholder="exemplo@exemplo.com" />
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row">
+
+                                            <label class="col-sm-2 control-label">Link Lattes</label>
+
+                                            <div class="col-md-3"><input id="lattesCod" type="text" class="form-control" placeholder="http://lattes.cnpq.br/94449232326572913" />
+                                            </div>
+
+                                            <label class="col-sm-1 control-label">Matrícula</label>
+                                            <div class="col-md-2"><input id="telCod" type="text" required="" class="form-control"  placeholder="" />
+                                            </div>
+
+                                            <label class="col-sm-1 control-label">Telefone</label>
+                                            <div class="col-md-2"><input id="telCod" type="text" required="" class="form-control" data-mask="(99) 99999-9999" placeholder="(99) 99999-9999" />
+                                            </div>
+
+
                                         </div>
 
                                         <div class="hr-line-dashed"></div>
@@ -657,6 +729,9 @@
                                                             </tr>
                                                         </tbody>
                                                     </table>
+                                                    <div class="">
+                                                        <a class="btn btn-primary">Nova etapa</a>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -706,128 +781,40 @@
                                                     1
                                                 </td>
                                                 <td>
-                                                    <input type="text" name='name0'  placeholder='Name' class="form-control"/>
+                                                    <input type="text" name='name0'  placeholder='' class="form-control"/>
                                                 </td>
                                                 <td>
-                                                    <input type="text" name='mail0' placeholder='Mail' class="form-control"/>
+                                                    <input type="text" name='mail0' placeholder='' class="form-control"/>
                                                 </td>
                                                 <td>
-                                                    <input type="text" name='mobile0' placeholder='Mobile' class="form-control"/>
+                                                    <input type="text" name='mobile0' placeholder='' class="form-control"/>
                                                 </td>
                                                 <td>
-                                                    <input type="text" name='mobile0' placeholder='Mobile' class="form-control"/>
+                                                    <input type="text" name='mobile0' placeholder='' class="form-control"/>
                                                 </td>
                                                 <td>
-                                                    <input type="text" name='mobile0' placeholder='Mobile' class="form-control"/>
+                                                    <input type="text" name='mobile0' placeholder='' class="form-control"/>
                                                 </td>
                                                 <td>
-                                                    <input type="text" name='mobile0' placeholder='Mobile' class="form-control"/>
+                                                    <input type="text" name='mobile0' placeholder='' class="form-control"/>
                                                 </td>
                                             </tr>
                                             <tr id='addr1'></tr>
 
-                                           
-                                        </tbody>
-                                    </table>
-                                    <div>
-                                        <a id="add_row" class="btn btn-default pull-left">Add Row</a><a id='delete_row' class="pull-right btn btn-default">Delete Row</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="ibox float-e-margins">
-                                <div class="ibox-title">
-                                    <h5>Recursos Necessários – Usos e Fontes</h5>
-                                    <div class="ibox-tools">
-                                        <a class="collapse-link">
-                                            <i class="fa fa-chevron-up"></i>
-                                        </a>
-                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                            <i class="fa fa-wrench"></i>
-                                        </a>
-                                        <a class="close-link">
-                                            <i class="fa fa-times"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="ibox-content">
-
-                                    <table class="table table-striped table-bordered table-hover " id="editable" >
-                                        <thead>
-                                            <tr>
-                                                <th>Itens de Dispêndio</th>
-                                                <th>Quantidade / Unidade</th>
-                                                <th>Descrição</th>
-                                                <th>Recursos UnP (R$)</th>
-                                                <th>Outros Recursos (R$)</th>
-                                                <th>Valor Total (R$)</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr class="gradeX">
-                                                <td>Trident</td>
-                                                <td>4 </td>
-                                                <td>Notebooks</td>
-                                                <td class="center">6.000</td>
-                                                <td class="center">0</td>
-                                                <td class="center">6.000</td>
-                                            </tr>
-                                            <tr class="gradeC">
-                                                <td>Trident</td>
-                                                <td>4 </td>
-                                                <td>Notebooks</td>
-                                                <td class="center">6.000</td>
-                                                <td class="center">0</td>
-                                                <td class="center">6.000</td>
-                                            </tr>
-                                            <tr class="gradeA">
-                                                <td>Trident</td>
-                                                <td>4 </td>
-                                                <td>Notebooks</td>
-                                                <td class="center">6.000</td>
-                                                <td class="center">0</td>
-                                                <td class="center">6.000</td>
-                                            </tr>
-                                            <tr class="gradeA">
-                                                <td>Trident</td>
-                                                <td>4 </td>
-                                                <td>Notebooks</td>
-                                                <td class="center">6.000</td>
-                                                <td class="center">0</td>
-                                                <td class="center">6.000</td>
-                                            </tr>
-                                            <tr class="gradeA">
-                                                <td>Trident</td>
-                                                <td>4 </td>
-                                                <td>Notebooks</td>
-                                                <td class="center">6.000</td>
-                                                <td class="center">0</td>
-                                                <td class="center">6.000</td>
-                                            </tr>
-                                            <tr class="gradeA">
-                                                <td>Trident</td>
-                                                <td>4 </td>
-                                                <td>Notebooks</td>
-                                                <td class="center">6.000</td>
-                                                <td class="center">0</td>
-                                                <td class="center">6.000</td>
-                                            </tr>
-
 
                                         </tbody>
-
                                     </table>
                                     <div class="">
-                                        <a onclick="fnClickAddRow();" href="javascript:void(0);" class="btn btn-primary ">Novo Recurso</a>
+                                        <a id="add_row" class="btn btn-primary">Novo Recurso</a>
                                     </div>
+
+
                                 </div>
                             </div>
                         </div>
                     </div>
+
+
 
 
                     <div class="row">
@@ -854,7 +841,7 @@
                                         <div class="row">
                                             <div class="row">
                                                 <div class="span">
-                                                    <table class="table table-bordered">
+                                                    <table class="table table-bordered" id="tabDesembolso">
                                                         <thead>
                                                             <tr>
 
@@ -878,122 +865,27 @@
                                                         </thead>
                                                         <tbody>
 
-                                                            <tr>
-                                                                <td>Revisão bibliográfica</td>
-                                                                <td> </td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
+                                                            <tr id='addrDesm0'>
+                                                                <td class="col-xs-2"><input type="text" name='name0'  placeholder='' class="form-control"/></td>
+                                                                <td class="col-xs-1"></td>
+                                                                <td class="col-xs-1"></td>
+                                                                <td class="col-xs-1"></td>
+                                                                <td class="col-xs-1"></td>
+                                                                <td class="col-xs-1"></td>
+                                                                <td class="col-xs-1"></td>
+                                                                <td class="col-xs-1"></td>
+                                                                <td class="col-xs-1"></td>
+                                                                <td class="col-xs-1"></td>
+                                                                <td class="col-xs-1"></td>
+                                                                <td class="col-md-2"></td>
 
                                                             </tr>
-                                                            <tr>
-                                                                <td>Definição da metodologia</td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                            </tr>
-
-                                                            <tr>
-                                                                <td>Coleta de dados</td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Análises e tratamento dos dados</td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Elaboração e análise de resultados</td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                            </tr>
-                                                            <tr class="clickable-row">
-                                                                <td>Resultados e discussões</td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Submissão de artigos e publicação</td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Finalização do relatório de pesquisa</td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                            </tr>
+                                                           <tr id='addrDesm1'></tr>
                                                         </tbody>
                                                     </table>
+                                                    <div class="">
+                                                        <a id="add_row_itemDesm" class="btn btn-primary">Novo item</a>                                            
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -1005,9 +897,10 @@
                         </div>
                     </div>
                     <div class="mail-body text-right tooltip-demo">
-                        <a href="index.html" class="btn btn-white btn-sm" data-toggle="tooltip" data-placement="top" title="Salvar rascunho"><i class="fa fa-pencil"></i> Salvar</a>
-                        <a href="index.html" class="btn btn-white btn-sm" data-toggle="tooltip" data-placement="top" title="Descartar"><i class="fa fa-times"></i> Descartar</a>
-                        <a href="index.html" class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top" title="Enviar proposta"><i class="fa fa-reply"></i> Enviar</a>
+                        <a href="index.html" class="btn btn-sm btn-warning" data-toggle="tooltip" data-placement="top" title="Salvar rascunho"><i class="fa fa-pencil"></i> Salvar</a>
+                        <a href="index.html" class="btn btn-sm btn-danger" data-toggle="tooltip" data-placement="top" title="Descartar"><i class="fa fa-times"></i> Descartar</a>
+                        <a href="index.html" class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top" title="Enviar proposta"><i class="fa fa-check"></i> Enviar</a>
+                  
                     </div>
                 </div>
 
@@ -1052,12 +945,12 @@
         <!-- iCheck -->
         <script src="js/plugins/iCheck/icheck.min.js"></script>
         <script>
-                                            $(document).ready(function () {
-                                                $('.i-checks').iCheck({
-                                                    checkboxClass: 'icheckbox_square-green',
-                                                    radioClass: 'iradio_square-green',
-                                                });
-                                            });
+            $(document).ready(function () {
+                $('.i-checks').iCheck({
+                    checkboxClass: 'icheckbox_square-green',
+                    radioClass: 'iradio_square-green',
+                });
+            });
         </script>
 
 
@@ -1066,17 +959,26 @@
             $(document).ready(function () {
                 var i = 1;
                 $("#add_row").click(function () {
-                    $('#addr' + i).html("<td>" + (i + 1) + "</td><td><input name='name" + i + "' type='text' placeholder='Name' class='form-control input-md'  /> </td><td><input  name='mail" + i + "' type='text' placeholder='Mail'  class='form-control input-md'></td><td><input  name='mobile" + i + "' type='text' placeholder='Mobile'  class='form-control input-md'></td> <td><input  name='mobile" + i + "' type='text' placeholder='Mobile'  class='form-control input-md'></td> <td><input  name='mobile" + i + "' type='text' placeholder='Mobile'  class='form-control input-md'></td> <td><input  name='mobile" + i + "' type='text' placeholder='Mobile'  class='form-control input-md'></td>");
+                    $('#addr' + i).html("<td>" + (i + 1) + "</td><td><input name='name" + i + "' type='text' placeholder='Item' class='form-control input-md'  /> </td><td><input  name='mail" + i + "' type='text' placeholder=''  class='form-control input-md'></td><td><input  name='mobile" + i + "' type='text' placeholder=''  class='form-control input-md'></td> <td><input  name='mobile" + i + "' type='text' placeholder=''  class='form-control input-md'></td> <td><input  name='mobile" + i + "' type='text' placeholder=''  class='form-control input-md'></td> <td><input  name='mobile" + i + "' type='text' placeholder=''  class='form-control input-md'></td>");
 
                     $('#tab_logic').append('<tr id="addr' + (i + 1) + '"></tr>');
                     i++;
                 });
-                $("#delete_row").click(function () {
-                    if (i > 1) {
-                        $("#addr" + (i - 1)).html('');
-                        i--;
-                    }
+              
+
+            });
+        </script>
+        
+         <script>
+            $(document).ready(function () {
+                var j = 1;
+                $("#add_row_itemDesm").click(function () {
+                    $('#addrDesm' + j).html("<td><input name='name" + j + "' type='text' placeholder='Item' class='form-control input-md'  /> </td> <td></td ><td></td> <td></td> <td></td> <td></td><td></td><td></td><td></td> <td></td> <td></td> <td></td>");
+
+                    $('#tabDesembolso').append('<tr id="addrDesm' + (j + 1) + '"></tr>');
+                    j++;
                 });
+                
 
             });
         </script>
@@ -1106,7 +1008,6 @@
                             "column": oTable.fnGetPosition(this)[2]
                         };
                     },
-
                     "width": "90%",
                     "height": "100%"
                 });
