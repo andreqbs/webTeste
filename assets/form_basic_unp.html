@@ -18,10 +18,10 @@
         <link href="css/plugins/dataTables/dataTables.responsive.css" rel="stylesheet">
         <link href="css/plugins/dataTables/dataTables.tableTools.min.css" rel="stylesheet">
 
-        <style>
+      <!--  <style> 
             td { cursor: default; }
             .highlight { background: #1ab394; }
-        </style>
+        </style>-->
 
         <style>
             body.DTTT_Print {
@@ -86,8 +86,8 @@
 
                         </li>
 
-                        <li>
-                            <a href="#"><i class="fa fa-sitemap"></i> <span class="nav-label">Pesquisa </span><span class="fa arrow"></span></a>
+                         <li>
+                            <a href="#"><i class="fa fa-graduation-cap"></i> <span class="nav-label">Pesquisa </span><span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
                                     <a href="#">Formulários <span class="fa arrow"></span></a>
@@ -110,7 +110,7 @@
                         </li>
 
                         <li>
-                            <a href="#"><i class="fa fa-sitemap"></i> <span class="nav-label">Extensão </span><span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-university"></i> <span class="nav-label">Extensão </span><span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
                                     <a href="#">Formulários <span class="fa arrow"></span></a>
@@ -132,8 +132,14 @@
                         </li>
 
 
-                        <li>
-                            <a href="table_data_tables_unp.html"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Relatórios</span></a>
+                       <li>
+                            <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">Relatórios </span><span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="table_data_tables_unp.html"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Relatórios V1</span></a>
+                                    <a href="table_data_tables_unp_2.html"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Relatórios V2</span></a>
+                                </li>
+                            </ul>
 
                         </li>
 
@@ -348,41 +354,7 @@
                                             </div>
                                         </div>
                                         <div class="hr-line-dashed"></div>
-                                        <div class="row">
-                                            <label class="col-sm-2 control-label">Professor Coordenador</label>
-
-                                            <div class="col-md-3"><input id="title" type="text" class="form-control" placeholder="Responsável pelo projeto" />
-                                            </div>
-
-                                            <label class="col-sm-1 control-label">Titulação</label>
-                                            <div class="col-md-2">
-                                                <select class="form-control m-b input-sm" name="account">
-                                                    <option>Selecione...</option>
-                                                    <option>Especialista</option>
-                                                    <option>Mestre</option>
-                                                    <option>Doutor</option>
-                                                </select>
-                                            </div>                                           
-                                            <label class="col-sm-1 control-label">Email</label>
-
-                                            <div class="col-md-3"><input id="emailCod" type="email" required="" class="form-control" placeholder="exemplo@exemplo.com" />
-                                            </div>
-                                        </div>
-
-
-                                        <div class="row">
-                                            <label class="col-sm-2 control-label">Telefone</label>
-
-                                            <div class="col-md-2"><input id="telCod" type="text" required="" class="form-control" data-mask="(99) 99999-9999" placeholder="(99) 99999-9999" />
-                                            </div>
-
-                                            <label class="col-sm-2 control-label">Link Lattes</label>
-
-                                            <div class="col-md-6"><input id="lattesCod" type="text" class="form-control" placeholder="http://lattes.cnpq.br/94449232326572913" />
-                                            </div>
-                                        </div>
-
-                                        <div class="hr-line-dashed"></div>
+                      
 
                                         <div class="row">
                                             <label class="col-sm-2 control-label">Colaborador</label>
@@ -959,7 +931,7 @@
             $(document).ready(function () {
                 var i = 1;
                 $("#add_row").click(function () {
-                    $('#addr' + i).html("<td>" + (i + 1) + "</td><td><input name='name" + i + "' type='text' placeholder='Item' class='form-control input-md'  /> </td><td><input  name='mail" + i + "' type='text' placeholder=''  class='form-control input-md'></td><td><input  name='mobile" + i + "' type='text' placeholder=''  class='form-control input-md'></td> <td><input  name='mobile" + i + "' type='text' placeholder=''  class='form-control input-md'></td> <td><input  name='mobile" + i + "' type='text' placeholder=''  class='form-control input-md'></td> <td><input  name='mobile" + i + "' type='text' placeholder=''  class='form-control input-md'></td>");
+                    $('#addr' + i).html("<td>" + (i + 1) + "</td><td><input name='name" + i + "' type='text' placeholder='' class='form-control input-md'  /> </td><td><input  name='mail" + i + "' type='text' placeholder=''  class='form-control input-md'></td><td><input  name='mobile" + i + "' type='text' placeholder=''  class='form-control input-md'></td> <td><input  name='mobile" + i + "' type='text' placeholder=''  class='form-control input-md'></td> <td><input  name='mobile" + i + "' type='text' placeholder=''  class='form-control input-md'></td> <td><input  name='mobile" + i + "' type='text' placeholder=''  class='form-control input-md'></td>");
 
                     $('#tab_logic').append('<tr id="addr' + (i + 1) + '"></tr>');
                     i++;
@@ -973,7 +945,7 @@
             $(document).ready(function () {
                 var j = 1;
                 $("#add_row_itemDesm").click(function () {
-                    $('#addrDesm' + j).html("<td><input name='name" + j + "' type='text' placeholder='Item' class='form-control input-md'  /> </td> <td></td ><td></td> <td></td> <td></td> <td></td><td></td><td></td><td></td> <td></td> <td></td> <td></td>");
+                    $('#addrDesm' + j).html("<td><input name='name" + j + "' type='text' placeholder='' class='form-control input-md'  /> </td> <td></td ><td></td> <td></td> <td></td> <td></td><td></td><td></td><td></td> <td></td> <td></td> <td></td>");
 
                     $('#tabDesembolso').append('<tr id="addrDesm' + (j + 1) + '"></tr>');
                     j++;
